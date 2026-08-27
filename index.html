@@ -18,14 +18,37 @@
             align-items: center;
             min-height: 100vh;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+        .ad-link {
+            display: block;
+            width: 100%;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .ad-image {
+            width: 100%;
+            max-height: 80vh;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 123, 255, 0.4);
+        }
+        .hint {
+            margin-top: 15px;
+            color: #00ffcc;
+            font-size: 18px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <img src="ad-image.jpg" alt="مكتب سبايدر">
+    <div class="container">
+        <a href="http://raw-game.com/zrm/run_poops.html" class="ad-link">
+            <img src="ad-image.jpg" alt="إعلان مكتب سبايدر" class="ad-image">
+            <div class="hint">اضغط هنا لفتح صفحة التهكير ➔</div>
+        </a>
+    </div>
 </body>
 </html>
